@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="main.css">
+</head>
+<body>
+ <div class="container">
+     <div class="left">
+         <p>Payment methods</p>
+         <hr style="border: 1px solid #ccc; margin: 0 15px;">
+         <div class="methods">
+             <div onclick="doFun()" id="tColorA" style="color: greenyellow;">
+                 <i class="fa-solid fa-credit-card" style="color: greenyellow;"></i> Payment by card
+             </div>
+             <div onclick="doFunA()" id="tColorB">
+                 <i class="fa-solid fa-building-columns"></i> Internet banks
+             </div>
+             <div onclick="doFunB()" id="tColorC">
+                 <i class="fa-solid fa-wallet"></i> Apple / Google pay
+             </div>
+             <hr style="border: 1px solid #ccc; margin: 0 15px;">
+         </div>
+     </div>
+
+     <div class="center">
+         <a href="https://www.shift4shop.com/credit-card-logos.html">
+             <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/credit-cards-color-logo.png" width="250" height="auto" alt="credit card logos">
+         </a>
+         <hr style="border: 1px solid #ccc; margin: 0 15px;">
+         <form action="">
+             <p>Card Number</p>
+             <div class="c-number">
+                 <input class="cc-number" id="number" placeholder="Card number" maxlength="19" required>
+                 <i class="fa-solid fa-credit-card"></i>
+             </div>
+             <div class="c-details">
+                 <p>Expiry date</p>
+                 <input id="e-date" class="cc-exp" placeholder="MM/YY" required maxlength="5">
+                 <p>CVV</p>
+                 <div class="cvv-box">
+                     <input id="CVV" class="cc-cvv" placeholder="CVV" required maxlength="3">
+                     <i class="fa-solid fa-circle-question" title="3 digits on the back of the card" style="cursor: pointer;"></i>
+                 </div>
+                 <p>Email</p>
+                 <input type="email" placeholder="example@email.com" id="email" required>
+                 <button >PAY NOW</button>
+             </div>
+         </form>
+     </div>
+
+     <div class="right">
+         <p>Order information</p>
+         <hr style="border: 1px solid #ccc; margin: 0 15px;">
+         <div class="details">
+             <div style="font-weight: bold; padding: 3px 0;">Order description</div>
+             <div style="padding: 3px 0;">Test payment</div>
+         </div>
+         <hr style="border: 1px solid #ccc; margin: 0 15px;">
+         <a href="https://www.shift4shop.com/credit-card-logos.html">
+             <img width="100%" height="auto" src="https://cdn.freebiesupply.com/logos/thumbs/2x/credit-cards-color-logo.png" alt="Credit Card Logos">
+         </a>
+     </div>
+ </div>
+ <script src="./main.js"></script>
+</body>
+</html>
